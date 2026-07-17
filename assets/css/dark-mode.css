@@ -1,0 +1,442 @@
+/* Dark Mode Styles for Hemmen Gıda */
+:root {
+  --dark-bg-primary: #1a1a1a;
+  --dark-bg-secondary: #2d2d2d;
+  --dark-bg-card: #3a3a3a;
+  --dark-text-primary: #ffffff;
+  --dark-text-secondary: #b0b0b0;
+  --dark-text-muted: #888888;
+  --dark-border: #4a4a4a;
+  --dark-shadow: rgba(0, 0, 0, 0.3);
+  --dark-overlay: rgba(0, 0, 0, 0.7);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: fixed !important;
+  top: 20px !important;
+  right: 180px !important;
+  width: 45px !important;
+  height: 45px !important;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px !important;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  z-index: 9998;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: none !important;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+.dark-mode-toggle.dark {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+  box-shadow: 0 8px 25px rgba(252, 182, 159, 0.3);
+}
+
+.dark-mode-toggle.dark:hover {
+  box-shadow: 0 12px 30px rgba(252, 182, 159, 0.4);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: var(--dark-bg-primary);
+  color: var(--dark-text-primary);
+  transition: all 0.3s ease;
+}
+
+/* Header Dark Mode */
+body.dark-mode .ultra-header {
+  background: var(--dark-bg-secondary);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .ultra-logo {
+  filter: brightness(1.2);
+}
+
+body.dark-mode .header-nav a {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .header-nav a:hover {
+  color: #e74c3c;
+}
+
+body.dark-mode .header-nav a.active {
+  color: #e74c3c;
+}
+
+body.dark-mode .btn-ultra.btn-primary {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+body.dark-mode .btn-ultra.btn-outline {
+  border: 2px solid var(--dark-border);
+  color: var(--dark-text-primary);
+  background: transparent;
+}
+
+body.dark-mode .btn-ultra.btn-outline:hover {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+
+/* Banner Dark Mode */
+body.dark-mode .ultra-banner-slider {
+  background: var(--dark-bg-primary);
+}
+
+body.dark-mode .banner-overlay {
+  background: var(--dark-overlay);
+}
+
+body.dark-mode .banner-title {
+  color: var(--dark-text-primary);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .banner-subtitle {
+  color: var(--dark-text-secondary);
+}
+
+/* Sections Dark Mode */
+body.dark-mode .ultra-section {
+  background: var(--dark-bg-primary);
+}
+
+body.dark-mode .ultra-section[style*="background: #fef7f7"],
+body.dark-mode .ultra-section[style*="background: #f8fafc"] {
+  background: var(--dark-bg-secondary) !important;
+}
+
+body.dark-mode .section-title {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .section-subtitle {
+  color: var(--dark-text-secondary);
+}
+
+/* Cards Dark Mode */
+body.dark-mode .ultra-product-card,
+body.dark-mode .feature-card,
+body.dark-mode .product-card {
+  background: var(--dark-bg-card);
+  border: 1px solid var(--dark-border);
+  box-shadow: 0 10px 25px var(--dark-shadow);
+}
+
+body.dark-mode .product-title,
+body.dark-mode .product-name,
+body.dark-mode .feature-title {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .product-description,
+body.dark-mode .feature-description {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .product-feature {
+  color: var(--dark-text-muted);
+}
+
+/* Product Detail Pages Dark Mode */
+body.dark-mode .product-detail-grid {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .ingredients-section,
+body.dark-mode .preparation-section {
+  background: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .ingredients-section h3,
+body.dark-mode .preparation-section h3 {
+  color: var(--dark-text-primary) !important;
+}
+
+body.dark-mode .ingredients-section p,
+body.dark-mode .preparation-section p {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* CTA Section Dark Mode */
+body.dark-mode .ultra-cta {
+  background: var(--dark-bg-secondary);
+}
+
+body.dark-mode .cta-title {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .cta-subtitle {
+  color: var(--dark-text-secondary);
+}
+
+/* Footer Dark Mode */
+body.dark-mode .modern-footer {
+  background: var(--dark-bg-secondary);
+  border-top: 1px solid var(--dark-border);
+}
+
+body.dark-mode .footer-description,
+body.dark-mode .footer-link {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .footer-link:hover {
+  color: #e74c3c;
+}
+
+body.dark-mode .modern-footer h5 {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .footer-bottom {
+  border-top: 1px solid var(--dark-border);
+  color: var(--dark-text-muted);
+}
+
+/* Form Elements Dark Mode */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: var(--dark-bg-card);
+  border: 1px solid var(--dark-border);
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: var(--dark-text-muted);
+}
+
+/* WhatsApp Button Dark Mode */
+body.dark-mode .whatsapp-btn-modern {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+/* Scroll to Top Dark Mode */
+body.dark-mode .scrollToTop {
+  background: var(--dark-bg-card);
+  color: var(--dark-text-primary);
+  border: 1px solid var(--dark-border);
+}
+
+/* Mobile Menu Dark Mode */
+body.dark-mode .simple-mobile-menu {
+  background: var(--dark-bg-secondary);
+  border-right: 1px solid var(--dark-border);
+}
+
+body.dark-mode .simple-mobile-menu a {
+  color: var(--dark-text-primary);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .simple-mobile-menu a:hover {
+  background: var(--dark-bg-card);
+}
+
+body.dark-mode .simple-mobile-menu a.active {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Special Dark Mode Elements */
+body.dark-mode [style*="background: white"] {
+  background: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border);
+}
+
+body.dark-mode [style*="color: #2d3748"] {
+  color: var(--dark-text-primary) !important;
+}
+
+body.dark-mode [style*="color: #4a5568"] {
+  color: var(--dark-text-secondary) !important;
+}
+
+body.dark-mode [style*="color: #718096"] {
+  color: var(--dark-text-muted) !important;
+}
+
+/* Product Image Containers */
+body.dark-mode .product-image-container {
+  background: var(--dark-bg-card);
+  border: 1px solid var(--dark-border);
+}
+
+/* Slider Controls Dark Mode */
+body.dark-mode .slider-btn {
+  background: var(--dark-bg-card);
+  color: var(--dark-text-primary);
+  border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .slider-btn:hover {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+
+body.dark-mode .dot {
+  background: var(--dark-border);
+}
+
+body.dark-mode .dot.active {
+  background: #e74c3c;
+}
+
+/* Animation for Dark Mode Transition */
+body.dark-mode * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Contact Page Dark Mode */
+body.dark-mode .contact-card {
+  background: var(--dark-bg-card);
+  border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .contact-icon {
+  background: var(--dark-bg-secondary);
+}
+
+/* About Page Dark Mode */
+body.dark-mode .about-content {
+  background: var(--dark-bg-card);
+  border: 1px solid var(--dark-border);
+}
+
+/* Responsive Dark Mode */
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    top: 20px !important;
+    right: 80px !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 16px !important;
+    transform: none !important;
+  }
+}
+
+/* Index Page Specific Dark Mode */
+body.dark-mode .why-choose-card,
+body.dark-mode .service-areas-section,
+body.dark-mode .product-categories-section {
+  background: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .why-choose-card h3,
+body.dark-mode .service-areas-section h3,
+body.dark-mode .product-categories-section h3,
+body.dark-mode .service-area-item h4,
+body.dark-mode .product-category-item h4 {
+  color: var(--dark-text-primary) !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .why-choose-card p,
+body.dark-mode .service-areas-section p,
+body.dark-mode .product-categories-section p,
+body.dark-mode .service-area-item p,
+body.dark-mode .product-category-item p {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* CTA Section Dark Mode */
+body.dark-mode .ultra-cta {
+  background: var(--dark-bg-secondary) !important;
+}
+
+body.dark-mode .cta-content {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .cta-title {
+  color: var(--dark-text-primary) !important;
+}
+
+body.dark-mode .cta-subtitle {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* All inline styled elements */
+body.dark-mode [style*="background: white"],
+body.dark-mode [style*="background:#ffffff"],
+body.dark-mode [style*="background: #ffffff"] {
+  background: var(--dark-bg-card) !important;
+  border: 1px solid var(--dark-border);
+}
+
+body.dark-mode [style*="background: #f8fafc"],
+body.dark-mode [style*="background:#f8fafc"] {
+  background: var(--dark-bg-secondary) !important;
+}
+
+body.dark-mode [style*="color: #2d3748"],
+body.dark-mode [style*="color:#2d3748"] {
+  color: var(--dark-text-primary) !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode [style*="color: #4a5568"],
+body.dark-mode [style*="color:#4a5568"] {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode [style*="color: #718096"],
+body.dark-mode [style*="color:#718096"] {
+  color: var(--dark-text-muted) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Auto Dark Mode Based on System Preference */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-primary);
+  }
+  
+  body:not(.light-mode) .ultra-header {
+    background: var(--dark-bg-secondary);
+    border-bottom: 1px solid var(--dark-border);
+  }
+  
+  body:not(.light-mode) .ultra-section {
+    background: var(--dark-bg-primary);
+  }
+  
+  body:not(.light-mode) .why-choose-card,
+  body:not(.light-mode) .service-areas-section,
+  body:not(.light-mode) .product-categories-section {
+    background: var(--dark-bg-card) !important;
+    border: 1px solid var(--dark-border);
+  }
+} 

@@ -1,0 +1,39 @@
+# Hemmen Gıda
+
+> İstanbul merkezli B2B toptan gıda tedarikçisi. Restoran, otel, kafe ve
+> catering (toplu üretim) mutfakları için endüstriyel ambalajda et bulyon,
+> tavuk bulyon, çiğ köfte harcı, sebzeli çeşni ve hazır patates püresi
+> üretir ve Türkiye geneli tedarik eder. Ürünler koruyucusuzdur ve domuz
+> yağı içermez.
+
+## Ürünler
+- [Toptan Et Bulyon](https://hemmengida.com/et-bulyon): Dana eti özütünden üretilen, restoran ve otellerin çorba/yemeklerinde kullandığı endüstriyel ambalajlı (5 kg) toz bulyon. Yoğun aroma, koruyucusuz.
+- [Toptan Tavuk Bulyon](https://hemmengida.com/tavuk-bulyon): Profesyonel mutfaklar için hafif, besleyici ve doğal aromalı tavuk bulyon. 5 kg endüstriyel ambalaj.
+- [Toptan Çiğ Köfte Harcı](https://hemmengida.com/cig-kofte-harci): Restoran, kafe ve çiğ köfteciler için doğal baharatlarla zenginleştirilmiş, hazır çiğ köfte harcı karışımı.
+- [Toptan Sebzeli Çeşni](https://hemmengida.com/sebzeli-cesni): Çorba, yemek ve soslarda kullanılan, doğal sebze aromalı çok amaçlı çeşni.
+- [Toptan Patates Püresi](https://hemmengida.com/patates-puresi): Toplu mutfaklar için sütlü, pratik hazır patates püresi tozu; dakikalar içinde hazırlanır.
+
+## Şirket
+- [Hakkımızda](https://hemmengida.com/hakkimizda): Firma profili, üretim yaklaşımı ve hizmet bölgesi.
+- [İletişim ve Fiyat Teklifi](https://hemmengida.com/iletisim): Telefon +90 539 586 06 35, e-posta hemmengida@hemmengida.com, WhatsApp ile fiyat teklifi.
+- [Tüm Ürünler](https://hemmengida.com/urunler): Ürün ailesinin tamamı.
+
+## Hizmet Bölgeleri (şehir sayfaları)
+- [İstanbul Toptan Gıda Tedariki](https://hemmengida.com/istanbul-toptan-gida-tedarik)
+- [Ankara Toptan Gıda Tedariki](https://hemmengida.com/ankara-toptan-gida-tedarik)
+- [İzmir Toptan Gıda Tedariki](https://hemmengida.com/izmir-toptan-gida-tedarik)
+- [Bursa Toptan Gıda Tedariki](https://hemmengida.com/bursa-toptan-gida-tedarik)
+- [Antalya Toptan Gıda Tedariki](https://hemmengida.com/antalya-toptan-gida-tedarik)
+- [Konya Toptan Gıda Tedariki](https://hemmengida.com/konya-toptan-gida-tedarik)
+- [Gaziantep Toptan Gıda Tedariki](https://hemmengida.com/gaziantep-toptan-gida-tedarik)
+- [Adana Toptan Gıda Tedariki](https://hemmengida.com/adana-toptan-gida-tedarik)
+
+## Hizmet Kapsamı
+- Müşteri tipi: Restoran, otel, kafe, catering / toplu yemek üreticileri (B2B)
+- Bölge: İstanbul merkezli, Türkiye geneli tedarik (İstanbul, Ankara, İzmir, Bursa, Antalya, Konya, Gaziantep, Samsun, Kayseri ve tüm iller)
+- Sipariş: Fiyat teklifi ile — WhatsApp/telefon +90 539 586 06 35
+- Ambalaj: Endüstriyel toptan ambalaj (ör. 5 kg / 10 kg)
+
+## Yasal
+- [KVKK Aydınlatma Metni](https://hemmengida.com/kvkk)
+- [Çerez Politikası](https://hemmengida.com/cerez-politikasi)

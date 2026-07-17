@@ -1,0 +1,97 @@
+# SEO Friendly URLs for Hemmen Gıda
+RewriteEngine On
+
+# --- Kanonik host & HTTPS zorlama (Cloudflare Tunnel uyumlu) ---
+# ÖNEMLİ: Tünel arkasında origin HTTP görür ama Cloudflare "X-Forwarded-Proto: https"
+# gönderir. Bu yüzden %{HTTPS} yerine forwarded proto'ya bakıyoruz — aksi halde
+# sonsuz yönlendirme döngüsü oluşur.
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# www -> non-www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# --- .php uzantılı istekleri temiz URL'e 301 yönlendir (duplicate content önleme) ---
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+about\.php[\s?] [NC]
+RewriteRule ^ /hakkimizda [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+product\.php[\s?] [NC]
+RewriteRule ^ /urunler [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+contact\.php[\s?] [NC]
+RewriteRule ^ /iletisim [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+kvkk\.php[\s?] [NC]
+RewriteRule ^ /kvkk [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+cerez-politikasi\.php[\s?] [NC]
+RewriteRule ^ /cerez-politikasi [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+hemmen-gida-et-bulyon\.php[\s?] [NC]
+RewriteRule ^ /et-bulyon [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+hemmen-gida-tavuk-bulyon\.php[\s?] [NC]
+RewriteRule ^ /tavuk-bulyon [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+hemmen-gida-cigkofte-harci\.php[\s?] [NC]
+RewriteRule ^ /cig-kofte-harci [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+hemmen-gida-sebzeli-cesni\.php[\s?] [NC]
+RewriteRule ^ /sebzeli-cesni [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+hemmen-gida-patates-puresi\.php[\s?] [NC]
+RewriteRule ^ /patates-puresi [R=301,L]
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# Compression for better page speed
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+</IfModule>
+
+# Clean Turkish URLs - Simple and User Friendly
+RewriteRule ^hakkimizda/?$ about.php [L,QSA]
+RewriteRule ^urunler/?$ product.php [L,QSA]
+RewriteRule ^iletisim/?$ contact.php [L,QSA]
+RewriteRule ^kvkk/?$ kvkk.php [L,QSA]
+RewriteRule ^cerez-politikasi/?$ cerez-politikasi.php [L,QSA]
+RewriteRule ^et-bulyon/?$ hemmen-gida-et-bulyon.php [L,QSA]
+RewriteRule ^tavuk-bulyon/?$ hemmen-gida-tavuk-bulyon.php [L,QSA]
+RewriteRule ^cig-kofte-harci/?$ hemmen-gida-cigkofte-harci.php [L,QSA]
+RewriteRule ^sebzeli-cesni/?$ hemmen-gida-sebzeli-cesni.php [L,QSA]
+RewriteRule ^patates-puresi/?$ hemmen-gida-patates-puresi.php [L,QSA]
+
+# Şehir/bölge landing sayfaları — /istanbul-toptan-gida-tedarik gibi
+RewriteRule ^([a-z]+)-toptan-gida-tedarik/?$ bolge.php?sehir=$1 [L,QSA]
+
+# NOT: cPanel'e özel "ea-php74" PHP handler'ı kaldırıldı — standart Ubuntu/Apache
+# kurulumunda (mod_php veya php-fpm) .php dosyaları otomatik işlenir; o satır burada
+# 500 hatası verirdi. PHP sürümü sunucu/VirtualHost tarafında ayarlanır (PHP 8.1+ önerilir).
+
+# --- Hassas dosyaları HTTP erişimine kapat ---
+<FilesMatch "(^\.ht|\.(md|log|bak|sql|example|json)$)">
+    Require all denied
+</FilesMatch>

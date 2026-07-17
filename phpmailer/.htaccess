@@ -1,0 +1,14 @@
+# phpmailer/ dizini kilidi (Apache 2.4)
+# Sadece contact.php (form endpoint'i) HTTP ile erişilebilir;
+# config.php, src/* ve diğer her şey doğrudan erişime KAPALI.
+
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>
+
+<Files "contact.php">
+    Require all granted
+</Files>
+
+# src/ kütüphane dizinini tamamen kapat
+RedirectMatch 404 /phpmailer/src/.*

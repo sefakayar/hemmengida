@@ -1,0 +1,418 @@
+/* =============================================================
+   Hemmen Gıda — Fresh 2025 katmanı
+   "Taze & İştah Açıcı" modernizasyon.
+   modern-hemmen.css'ten SONRA yüklenir, üzerine yazar.
+   Marka kırmızısı korunur; sıcak zemin + yeşil "doğal" vurgu eklenir.
+   ============================================================= */
+
+:root {
+    /* Marka */
+    --f-red: #e63a2e;
+    --f-red-deep: #c62f28;
+    --f-orange: #ff7a3d;
+    --f-gradient: linear-gradient(135deg, #ff7a3d 0%, #e63a2e 100%);
+
+    /* Doğal / taze vurgu (koyulaştırıldı — WCAG AA kontrast) */
+    --f-green: #157a41;
+    --f-green-soft: #e7f6ec;
+
+    /* Sıcak zeminler */
+    --f-cream: #fff8f2;
+    --f-cream-2: #fff1e6;
+    --f-peach: #ffe9db;
+
+    /* Sıcak metin & çizgi */
+    --f-ink: #2a211d;
+    --f-muted: #7c6a60;
+    --f-line: #f0e2d6;
+
+    /* Yumuşak, sıcak gölge */
+    --f-shadow-sm: 0 2px 8px rgba(90, 45, 20, .06);
+    --f-shadow: 0 14px 34px rgba(90, 45, 20, .10);
+    --f-shadow-lg: 0 26px 60px rgba(90, 45, 20, .16);
+
+    /* Bazı mevcut token'ları sıcaklaştır (global etki — kasıtlı) */
+    --bg-secondary: var(--f-cream);
+    --bg-tertiary: var(--f-cream-2);
+}
+
+/* ---------- Taban ---------- */
+body {
+    background: var(--f-cream);
+    color: var(--f-ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, .section-title, .banner-title, .cta-title, .product-title, .feature-title {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    letter-spacing: -.01em;
+}
+
+body.menu-open { overflow: hidden; }
+
+/* Bölüm zemin ritmi — sıcak alternatif */
+.ultra-section { padding: clamp(3rem, 7vw, 6rem) 0; }
+.ultra-section:nth-of-type(even) { background: var(--f-cream); }
+.ultra-section:nth-of-type(odd)  { background: #ffffff; }
+.ultra-features { background: var(--f-cream) !important; }
+
+/* ---------- Bölüm başlıkları ---------- */
+.section-title {
+    font-weight: 700;
+    font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+    color: var(--f-ink);
+    position: relative;
+    display: inline-block;
+    padding-top: 1rem;
+}
+.section-title::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 54px; height: 4px;
+    border-radius: 999px;
+    background: var(--f-gradient);
+}
+.section-subtitle {
+    color: var(--f-muted);
+    font-size: clamp(1rem, 1.6vw, 1.12rem);
+    max-width: 640px;
+    margin: .9rem auto 0;
+    line-height: 1.65;
+}
+
+/* ---------- Header ---------- */
+.ultra-header {
+    background: rgba(255, 255, 255, .97) !important;
+    -webkit-backdrop-filter: saturate(150%) blur(12px);
+    backdrop-filter: saturate(150%) blur(12px);
+    border-bottom: 1px solid var(--f-line);
+    transition: box-shadow .3s ease, background .3s ease;
+}
+.ultra-header.scrolled {
+    box-shadow: var(--f-shadow-sm);
+    background: rgba(255, 255, 255, .99) !important;
+}
+/* Mobilde backdrop-filter devre dışı kalsa bile içerik header'dan sızmasın: tam opak */
+@media (max-width: 768px) {
+    .ultra-header,
+    .ultra-header.scrolled {
+        background: #ffffff !important;
+    }
+}
+.ultra-logo { height: 52px; width: auto; }
+.nav-link {
+    position: relative;
+    color: var(--f-ink) !important;
+    font-weight: 500;
+    padding: .35rem .2rem;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -3px;
+    width: 100%; height: 2px;
+    background: var(--f-gradient);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+    border-radius: 2px;
+}
+.nav-link:hover::after,
+.nav-link.active::after { transform: scaleX(1); }
+.nav-link.active { color: var(--f-red-deep) !important; }
+
+/* ---------- Erişilebilirlik: focus & skip-link ---------- */
+a:focus-visible,
+button:focus-visible,
+.btn-ultra:focus-visible,
+.nav-link:focus-visible,
+.mobile-menu-toggle:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--f-red-deep) !important;
+    outline-offset: 2px !important;
+    border-radius: 6px;
+}
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 2000;
+    background: var(--f-red-deep);
+    color: #fff;
+    padding: .8rem 1.2rem;
+    border-radius: 0 0 10px 0;
+    font-weight: 600;
+    text-decoration: none;
+}
+.skip-link:focus {
+    left: 0;
+}
+main { display: block; }
+
+/* ---------- Butonlar ---------- */
+.btn-ultra {
+    border-radius: 999px;
+    font-weight: 600;
+    gap: .55rem;
+    transition: transform .2s ease, box-shadow .25s ease, background .25s ease;
+}
+.btn-primary, .banner-cta .btn-primary {
+    background: var(--f-gradient) !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: 0 10px 24px rgba(230, 58, 46, .28);
+}
+.btn-primary:hover, .banner-cta .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(230, 58, 46, .36);
+    color: #fff !important;
+}
+.btn-outline {
+    border: 2px solid rgba(255, 255, 255, .85) !important;
+    color: #fff !important;
+    background: rgba(255, 255, 255, .06) !important;
+    backdrop-filter: blur(4px);
+}
+.btn-outline:hover {
+    background: #fff !important;
+    color: var(--f-red) !important;
+    transform: translateY(-2px);
+}
+.btn-whatsapp, a.btn-whatsapp {
+    background: linear-gradient(135deg, #25d366, #128c7e) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+/* ---------- Hero / Banner ---------- */
+.ultra-banner-slider .swiper-slide,
+.ultra-banner-slider { min-height: clamp(460px, 74vh, 720px); }
+.banner-overlay {
+    background: linear-gradient(105deg,
+        rgba(30, 12, 6, .82) 0%,
+        rgba(40, 16, 8, .58) 42%,
+        rgba(40, 16, 8, .20) 100%) !important;
+}
+.banner-content { max-width: 680px; }
+.banner-title {
+    font-weight: 800 !important;
+    font-size: clamp(2.3rem, 6vw, 4.2rem) !important;
+    line-height: 1.05 !important;
+    color: #fff !important;
+    text-shadow: 0 3px 22px rgba(0, 0, 0, .35);
+}
+.banner-subtitle {
+    color: rgba(255, 255, 255, .92) !important;
+    font-size: clamp(1rem, 2vw, 1.28rem) !important;
+    max-width: 600px;
+    line-height: 1.65 !important;
+}
+.banner-cta { gap: .9rem; flex-wrap: wrap; }
+
+/* ---------- Feature kartları ---------- */
+.features-grid { gap: clamp(1.2rem, 3vw, 2rem); }
+.feature-card {
+    background: #fff !important;
+    border: 1px solid var(--f-line) !important;
+    border-radius: 24px !important;
+    box-shadow: var(--f-shadow-sm) !important;
+    padding: clamp(1.8rem, 3vw, 2.4rem) !important;
+    transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--f-shadow) !important;
+    border-color: #ffd9c7 !important;
+}
+.feature-icon {
+    width: 74px !important;
+    height: 74px !important;
+    border-radius: 20px !important;
+    background: linear-gradient(160deg, #fff0e8, #ffe0d0) !important;
+    color: var(--f-red) !important;
+    box-shadow: inset 0 0 0 1px rgba(230, 58, 46, .12) !important;
+    font-size: 1.85rem !important;
+}
+.feature-title { color: var(--f-ink) !important; font-weight: 700 !important; }
+.feature-description { color: var(--f-muted) !important; }
+
+/* ---------- Ürün kartları ---------- */
+.ultra-product-grid { gap: clamp(1.3rem, 3vw, 2.2rem); }
+.ultra-product-card {
+    background: #fff !important;
+    border: 1px solid var(--f-line) !important;
+    border-radius: 26px !important;
+    box-shadow: var(--f-shadow-sm) !important;
+    overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.ultra-product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--f-shadow-lg) !important;
+    border-color: #ffd2bd !important;
+}
+/* Ürün görseli sıcak krem zeminde "yüzsün", kırpılmasın */
+.product-image-container {
+    background: linear-gradient(160deg, var(--f-cream-2) 0%, var(--f-peach) 100%) !important;
+    border-radius: 22px !important;
+    padding: 1.25rem !important;
+    margin-bottom: var(--space-6);
+}
+.product-image {
+    height: 240px !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 14px 22px rgba(90, 45, 20, .18));
+    transition: transform .35s ease;
+}
+.ultra-product-card:hover .product-image { transform: scale(1.05) rotate(-1deg); }
+.product-badge {
+    border-radius: 999px !important;
+    font-weight: 600;
+    letter-spacing: .01em;
+    box-shadow: var(--f-shadow-sm);
+}
+.product-title { color: var(--f-ink) !important; font-weight: 700 !important; }
+.product-description { color: var(--f-muted) !important; line-height: 1.6; }
+.product-feature {
+    background: var(--f-green-soft) !important;
+    color: var(--f-green) !important;
+    border-radius: 999px !important;
+    padding: .35rem .8rem !important;
+    font-weight: 500;
+}
+.product-feature i { color: var(--f-green) !important; }
+.ultra-product-card .btn-primary { width: 100%; justify-content: center; }
+
+/* "Neden tedarikçisi" & kategori kutuları (inline stilli) — yuvarlaklık + sıcak gölge */
+.why-choose-card, .service-areas-section, .product-categories-section {
+    border-radius: 22px !important;
+    box-shadow: var(--f-shadow-sm) !important;
+    border: 1px solid var(--f-line);
+}
+.why-choose-card:hover { box-shadow: var(--f-shadow) !important; transform: translateY(-6px); transition: .28s; }
+
+/* ---------- CTA bölümü ---------- */
+.ultra-section.ultra-cta, .ultra-cta {
+    background: var(--f-gradient) !important;
+    color: #fff !important;
+}
+.ultra-cta .cta-title { color: #fff !important; }
+.ultra-cta .cta-subtitle { color: rgba(255, 255, 255, .92) !important; }
+.ultra-cta .cta-subtitle strong { color: #fff !important; }
+/* CTA içindeki butonlar sıcak zemine göre */
+.ultra-cta .btn-primary {
+    background: #fff !important;
+    color: var(--f-red) !important;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, .18);
+}
+.ultra-cta .btn-primary:hover { color: var(--f-red-deep) !important; }
+.ultra-cta .btn-outline { border-color: rgba(255,255,255,.9) !important; color: #fff !important; }
+/* index.php'deki teslimat şeridi (mobil-uyumlu, temiz) */
+.delivery-strip {
+    display: flex; align-items: center; justify-content: center; gap: .8rem;
+    margin: 1.8rem auto; padding: 1rem 1.4rem; max-width: 640px;
+    background: rgba(255, 255, 255, .16) !important;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 16px; backdrop-filter: blur(8px);
+    color: #fff !important; font-weight: 600;
+}
+.delivery-strip i { color: #ffe08a; font-size: 1.4rem; }
+.delivery-strip p { margin: 0; color: #fff !important; }
+
+/* ---------- Footer ---------- */
+.modern-footer {
+    background: linear-gradient(150deg, #2a1f1a 0%, #3d2b23 100%) !important;
+    color: #ecdfd6 !important;
+}
+.modern-footer::before {
+    background:
+        radial-gradient(circle at 18% 40%, rgba(255, 122, 61, .16) 0%, transparent 55%),
+        radial-gradient(circle at 82% 20%, rgba(31, 157, 85, .12) 0%, transparent 55%) !important;
+}
+.footer-link:hover { color: var(--f-orange) !important; }
+.footer-section h5 { color: #fff !important; }
+.footer-social a:hover { background: var(--f-gradient) !important; border-color: transparent !important; }
+
+/* =============================================================
+   MOBİL İYİLEŞTİRMELER
+   ============================================================= */
+@media (max-width: 768px) {
+    .ultra-section { padding: 2.6rem 0; }
+    .section-header { margin-bottom: 1.6rem; }
+    .banner-content { text-align: center; margin: 0 auto; }
+    .banner-cta { justify-content: center; }
+    .banner-cta .btn-ultra { width: 100%; max-width: 320px; justify-content: center; }
+    .product-image { height: 210px !important; }
+
+    /* Alt sabit hızlı işlem çubuğu için yer aç */
+    body { padding-bottom: 72px; }
+}
+
+@media (max-width: 480px) {
+    .ultra-logo { height: 44px; }
+    .product-image-container { padding: 1rem !important; }
+    .feature-icon { width: 64px !important; height: 64px !important; font-size: 1.6rem !important; }
+}
+
+/* ---------- Mobil sabit hızlı işlem çubuğu ---------- */
+.mobile-action-bar {
+    display: none;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 900;
+    background: rgba(255, 255, 255, .97);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--f-line);
+    box-shadow: 0 -6px 20px rgba(90, 45, 20, .10);
+    padding: .5rem;
+    gap: .5rem;
+}
+.mobile-action-bar a {
+    flex: 1;
+    display: flex; align-items: center; justify-content: center; gap: .45rem;
+    padding: .75rem .5rem;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: .95rem;
+    text-decoration: none;
+}
+.mab-call { background: var(--f-gradient); color: #fff; }
+.mab-wa { background: linear-gradient(135deg, #25d366, #128c7e); color: #fff; }
+@media (max-width: 768px) {
+    .mobile-action-bar { display: flex; }
+}
+
+/* ---------- SSS / FAQ (ürün sayfaları) ---------- */
+.faq-list { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+.faq-item {
+    background: #fff;
+    border: 1px solid var(--f-line);
+    border-radius: 16px;
+    padding: 1.1rem 1.4rem;
+    box-shadow: var(--f-shadow-sm);
+}
+.faq-item > summary {
+    font-weight: 600;
+    color: var(--f-ink);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.faq-item > summary::-webkit-details-marker { display: none; }
+.faq-item > summary::after {
+    content: '\002B';
+    color: var(--f-red);
+    font-size: 1.4rem;
+    line-height: 1;
+    transition: transform .2s ease;
+}
+.faq-item[open] > summary::after { content: '\2212'; }
+.faq-item > p { color: var(--f-muted); margin: .85rem 0 0; line-height: 1.7; }

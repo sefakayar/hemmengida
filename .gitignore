@@ -1,0 +1,15 @@
+# GİZLİ — SMTP şifresi içerir, ASLA commit edilmez
+phpmailer/config.php
+
+# Deploy arşivleri
+*.tar.gz
+
+# Geçici / dev
+*.log
+error_log
+MOBIL_OPTIMIZASYON_RAPORU.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

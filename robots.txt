@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+
+# Ana Sayfalar
+Allow: /hakkimizda
+Allow: /urunler
+Allow: /iletisim
+
+# Ürün Sayfaları
+Allow: /cig-kofte-harci
+Allow: /et-bulyon
+Allow: /tavuk-bulyon
+Allow: /sebzeli-cesni
+Allow: /patates-puresi
+
+# Gereksiz dizinleri engelle
+Disallow: /phpmailer/
+
+# AI / Yapay Zeka Motorları (açık izin)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://hemmengida.com/sitemap.xml
