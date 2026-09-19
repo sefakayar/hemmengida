@@ -5,7 +5,7 @@
     <!-- Ana Sayfa -->
     <url>
         <loc>https://hemmengida.com/</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -17,7 +17,7 @@
     <!-- Hakkımızda -->
     <url>
         <loc>https://hemmengida.com/hakkimizda</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -25,7 +25,7 @@
     <!-- Ürünler -->
     <url>
         <loc>https://hemmengida.com/urunler</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -41,7 +41,7 @@
     <!-- Ürün Detay Sayfaları -->
     <url>
         <loc>https://hemmengida.com/cig-kofte-harci</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <image:image>
@@ -52,7 +52,7 @@
 
     <url>
         <loc>https://hemmengida.com/et-bulyon</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <image:image>
@@ -63,7 +63,7 @@
 
     <url>
         <loc>https://hemmengida.com/tavuk-bulyon</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <image:image>
@@ -74,7 +74,7 @@
 
     <url>
         <loc>https://hemmengida.com/sebzeli-cesni</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <image:image>
@@ -85,7 +85,7 @@
 
     <url>
         <loc>https://hemmengida.com/patates-puresi</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <image:image>
@@ -103,6 +103,69 @@
     <url><loc>https://hemmengida.com/konya-toptan-gida-tedarik</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://hemmengida.com/gaziantep-toptan-gida-tedarik</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://hemmengida.com/adana-toptan-gida-tedarik</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- Blog -->
+    <url>
+        <loc>https://hemmengida.com/blog</loc>
+        <lastmod>2026-09-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://hemmengida.com/blog/bulyon-nedir-restoran-mutfaginda-kullanimi</loc>
+        <lastmod>2026-09-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://hemmengida.com/assets/images/product/Et%20Bulyon%20Web%201.webp</image:loc>
+            <image:title>Bulyon nedir, restoran mutfağında nasıl kullanılır</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://hemmengida.com/blog/et-bulyon-mu-tavuk-bulyon-mu</loc>
+        <lastmod>2026-09-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://hemmengida.com/assets/images/product/Tavuk%20Web%201.webp</image:loc>
+            <image:title>Et bulyon mu tavuk bulyon mu karşılaştırma</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://hemmengida.com/blog/gida-dukkani-raf-ve-teshir-duzeni</loc>
+        <lastmod>2026-09-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://hemmengida.com/assets/images/product/toptansatis%20web.webp</image:loc>
+            <image:title>Gıda dükkânı raf ve teşhir düzeni</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://hemmengida.com/blog/toptan-gida-tedarikcisi-secimi</loc>
+        <lastmod>2026-09-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://hemmengida.com/assets/images/Quality-Insurance-Inspections-1024x571.webp</image:loc>
+            <image:title>Toptan gıda tedarikçisi seçimi</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://hemmengida.com/blog/hazir-patates-puresi-mi-taze-patates-mi</loc>
+        <lastmod>2026-09-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://hemmengida.com/assets/images/product/patatespuresi%20web.webp</image:loc>
+            <image:title>Hazır patates püresi mi taze patates mi</image:title>
+        </image:image>
+    </url>
 
     <!-- Yasal Sayfalar -->
     <url>

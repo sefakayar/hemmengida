@@ -18,13 +18,13 @@ include 'header.php';
                 <div class="product-image-slider">
                     <div class="product-slider" data-product="cigkofte">
                         <div class="product-slide active">
-                            <img src="assets/images/product/kovalar/cigkofte.webp" alt="Çiğ Köfte Kova" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/cigkofte.webp" alt="Çiğ Köfte Kova" loading="lazy" decoding="async" width="800" height="567">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/kovalar/cig_kofte_1.webp" alt="Çiğ Köfte Premium" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/cig_kofte_1.webp" alt="Çiğ Köfte Premium" loading="lazy" decoding="async" width="640" height="651">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/Cig Kofte Web 1.webp" alt="Çiğ Köfte Web" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/Cig Kofte Web 1.webp" alt="Çiğ Köfte Web" loading="lazy" decoding="async" width="443" height="600">
                         </div>
                     </div>
                     <div class="slider-controls">
@@ -57,13 +57,13 @@ include 'header.php';
                 <div class="product-image-slider">
                     <div class="product-slider" data-product="etbulyon">
                         <div class="product-slide active">
-                            <img src="assets/images/product/kovalar/et.webp" alt="Et Bulyon Kova" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/et.webp" alt="Et Bulyon Kova" loading="lazy" decoding="async" width="800" height="567">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/kovalar/et_1.webp" alt="Et Bulyon Premium" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/et_1.webp" alt="Et Bulyon Premium" loading="lazy" decoding="async" width="640" height="651">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/Et Bulyon Web 1.webp" alt="Et Bulyon Web" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/Et Bulyon Web 1.webp" alt="Et Bulyon Web" loading="lazy" decoding="async" width="443" height="600">
                         </div>
                     </div>
                     <div class="slider-controls">
@@ -96,13 +96,13 @@ include 'header.php';
                 <div class="product-image-slider">
                     <div class="product-slider" data-product="tavukbulyon">
                         <div class="product-slide active">
-                            <img src="assets/images/product/kovalar/tavuk.webp" alt="Tavuk Bulyon Kova" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/tavuk.webp" alt="Tavuk Bulyon Kova" loading="lazy" decoding="async" width="800" height="567">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/kovalar/tavuk_1.webp" alt="Tavuk Bulyon Premium" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/tavuk_1.webp" alt="Tavuk Bulyon Premium" loading="lazy" decoding="async" width="640" height="651">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/Tavuk Web 1.webp" alt="Tavuk Bulyon Web" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/Tavuk Web 1.webp" alt="Tavuk Bulyon Web" loading="lazy" decoding="async" width="443" height="600">
                         </div>
                     </div>
                     <div class="slider-controls">
@@ -135,13 +135,13 @@ include 'header.php';
                 <div class="product-image-slider">
                     <div class="product-slider" data-product="sebzelicesni">
                         <div class="product-slide active">
-                            <img src="assets/images/product/kovalar/sebze.webp" alt="Sebzeli Çeşni Kova" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/sebze.webp" alt="Sebzeli Çeşni Kova" loading="lazy" decoding="async" width="800" height="567">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/kovalar/sebze_1.webp" alt="Sebzeli Çeşni Premium" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/sebze_1.webp" alt="Sebzeli Çeşni Premium" loading="lazy" decoding="async" width="640" height="651">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/Sebzeli Cesni Web 1.webp" alt="Sebzeli Çeşni Web" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/Sebzeli Cesni Web 1.webp" alt="Sebzeli Çeşni Web" loading="lazy" decoding="async" width="443" height="600">
                         </div>
                     </div>
                     <div class="slider-controls">
@@ -174,13 +174,13 @@ include 'header.php';
                 <div class="product-image-slider">
                     <div class="product-slider" data-product="patatespuresi">
                         <div class="product-slide active">
-                            <img src="assets/images/product/kovalar/patates.webp" alt="Patates Püresi Kova" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/patates.webp" alt="Patates Püresi Kova" loading="lazy" decoding="async" width="800" height="800">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/kovalar/patates puresi.webp" alt="Patates Püresi Premium" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/kovalar/patates puresi.webp" alt="Patates Püresi Premium" loading="lazy" decoding="async" width="591" height="800">
                         </div>
                         <div class="product-slide">
-                            <img src="assets/images/product/patatespuresi web.webp" alt="Patates Püresi Web" loading="lazy" decoding="async">
+                            <img src="/assets/images/product/patatespuresi web.webp" alt="Patates Püresi Web" loading="lazy" decoding="async" width="443" height="600">
                         </div>
                     </div>
                     <div class="slider-controls">
@@ -651,6 +651,82 @@ function currentSlide(productId, n) {
 //         changeSlide(productId, 1);
 //     });
 // }, 5000); // Change slide every 5 seconds
+</script>
+
+
+<!-- Ürün listesi SSS + ItemList/Breadcrumb şeması -->
+<?php
+$urun_sss = [
+    ['Toptan sipariş nasıl verilir?',
+     'Ürün ve miktarı belirttikten sonra WhatsApp veya telefon (+90 539 586 06 35) üzerinden fiyat teklifi alırsınız. Teklif onaylandığında sevkiyat planlanır.'],
+    ['Ambalaj boyutları nedir?',
+     'Et bulyon, tavuk bulyon ve sebzeli çeşni 5 kg toz karışım ambalajında sunulur. Diğer ürünler için güncel ambalaj seçeneklerini iletişim kanallarımızdan öğrenebilirsiniz.'],
+    ['Ürünlerin içindekiler listesi nerede yayımlanıyor?',
+     'Her ürünün tam içindekiler listesi ve alerjen beyanı ilgili ürün detay sayfasında ve ambalaj üzerinde yer alır.'],
+    ['Aynı anda birden fazla ürün sipariş edilebilir mi?',
+     'Evet. Ürün ailesinin tamamı tek sevkiyatta gönderilebilir; bu, teslimat takibini ve maliyeti basitleştirir.'],
+];
+$urun_listesi = [
+    ['Toptan Çiğ Köfte Harcı', '/cig-kofte-harci'],
+    ['Toptan Et Bulyon',       '/et-bulyon'],
+    ['Toptan Tavuk Bulyon',    '/tavuk-bulyon'],
+    ['Toptan Sebzeli Çeşni',   '/sebzeli-cesni'],
+    ['Toptan Patates Püresi',  '/patates-puresi'],
+];
+?>
+<section class="ultra-section" style="background:#fff;">
+    <div class="ultra-container">
+        <div class="section-header">
+            <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+            <p class="section-subtitle">Sipariş, ambalaj ve içerik bilgileri</p>
+        </div>
+        <div class="faq-list">
+            <?php foreach ($urun_sss as $i => [$soru, $cevap]): ?>
+            <details class="faq-item"<?php echo $i === 0 ? ' open' : ''; ?>>
+                <summary><?php echo htmlspecialchars($soru); ?></summary>
+                <p><?php echo htmlspecialchars($cevap); ?></p>
+            </details>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<script type="application/ld+json">
+<?php
+echo json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'ItemList',
+            '@id'   => 'https://hemmengida.com/urunler#liste',
+            'name'  => 'Hemmen Gıda toptan ürünleri',
+            'numberOfItems' => count($urun_listesi),
+            'itemListElement' => array_map(static fn($i, $u) => [
+                '@type' => 'ListItem',
+                'position' => $i + 1,
+                'name' => $u[0],
+                'url'  => 'https://hemmengida.com' . $u[1],
+            ], array_keys($urun_listesi), $urun_listesi),
+        ],
+        [
+            '@type' => 'FAQPage',
+            '@id'   => 'https://hemmengida.com/urunler#faq',
+            'mainEntity' => array_map(static fn($q) => [
+                '@type' => 'Question', 'name' => $q[0],
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => $q[1]],
+            ], $urun_sss),
+        ],
+        [
+            '@type' => 'BreadcrumbList',
+            '@id'   => 'https://hemmengida.com/urunler#breadcrumb',
+            'itemListElement' => [
+                ['@type' => 'ListItem', 'position' => 1, 'name' => 'Ana Sayfa', 'item' => 'https://hemmengida.com/'],
+                ['@type' => 'ListItem', 'position' => 2, 'name' => 'Ürünlerimiz', 'item' => 'https://hemmengida.com/urunler'],
+            ],
+        ],
+    ],
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+?>
 </script>
 
 <?php include 'footer.php';?>

@@ -10,7 +10,7 @@ include 'header.php';
     <div class="swiper banner-swiper">
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
-            <div class="swiper-slide" style="background-image: url('assets/images/banner/1.webp');">
+            <div class="swiper-slide" style="background-image: url('/assets/images/banner/1.webp');">
                 <div class="banner-overlay"></div>
                 <div class="ultra-container">
                     <div class="banner-content">
@@ -35,7 +35,7 @@ include 'header.php';
                 </div>
             
             <!-- Slide 2 -->
-            <div class="swiper-slide" style="background-image: url('assets/images/banner/2.webp');">
+            <div class="swiper-slide" style="background-image: url('/assets/images/banner/2.webp');">
                 <div class="banner-overlay"></div>
                 <div class="ultra-container">
                     <div class="banner-content">
@@ -60,7 +60,7 @@ include 'header.php';
                 </div>
             
             <!-- Slide 3 -->
-            <div class="swiper-slide" style="background-image: url('assets/images/banner/3.webp'); background-position: center right;">
+            <div class="swiper-slide" style="background-image: url('/assets/images/banner/3.webp'); background-position: center right;">
                 <div class="banner-overlay"></div>
                 <div class="ultra-container">
                     <div class="banner-content">
@@ -152,7 +152,7 @@ include 'header.php';
             <div class="ultra-product-card">
                 <div class="product-badge">Premium</div>
                 <div class="product-image-container">
-                    <img src="assets/images/product/Cig Kofte Web 1.webp" alt="Hemmen Çiğ Köfte Harcı" class="product-image" loading="lazy" decoding="async">
+                    <img src="/assets/images/product/Cig Kofte Web 1.webp" alt="Hemmen Çiğ Köfte Harcı" class="product-image" loading="lazy" decoding="async" width="443" height="600">
 									</div>
 									<div class="product-content">
                     <h3 class="product-title">Hemmen Çiğ Köfte Harcı</h3>
@@ -180,7 +180,7 @@ include 'header.php';
             <div class="ultra-product-card">
                 <div class="product-badge" style="background: linear-gradient(135deg, #8b4513, #a0522d);">Yoğun Tat</div>
                 <div class="product-image-container">
-                    <img src="assets/images/product/Et Bulyon Web 1.webp" alt="Hemmen Et Bulyon" class="product-image" loading="lazy" decoding="async">
+                    <img src="/assets/images/product/Et Bulyon Web 1.webp" alt="Hemmen Et Bulyon" class="product-image" loading="lazy" decoding="async" width="443" height="600">
 									</div>
 									<div class="product-content">
                     <h3 class="product-title">Hemmen Et Bulyon</h3>
@@ -208,7 +208,7 @@ include 'header.php';
             <div class="ultra-product-card">
                 <div class="product-badge" style="background: linear-gradient(135deg, #b45309, #9a3412);">Doğal</div>
                 <div class="product-image-container">
-                    <img src="assets/images/product/Tavuk Web 1.webp" alt="Hemmen Tavuk Bulyon" class="product-image" loading="lazy" decoding="async">
+                    <img src="/assets/images/product/Tavuk Web 1.webp" alt="Hemmen Tavuk Bulyon" class="product-image" loading="lazy" decoding="async" width="443" height="600">
 									</div>
 									<div class="product-content">
                     <h3 class="product-title">Hemmen Tavuk Bulyon</h3>
@@ -236,7 +236,7 @@ include 'header.php';
             <div class="ultra-product-card">
                 <div class="product-badge" style="background: var(--gradient-success);">Yeni</div>
                 <div class="product-image-container">
-                    <img src="assets/images/product/Sebzeli Cesni Web 1.webp" alt="Hemmen Sebzeli Çeşni" class="product-image" loading="lazy" decoding="async">
+                    <img src="/assets/images/product/Sebzeli Cesni Web 1.webp" alt="Hemmen Sebzeli Çeşni" class="product-image" loading="lazy" decoding="async" width="443" height="600">
 							</div>
                 <div class="product-content">
                     <h3 class="product-title">Hemmen Sebzeli Çeşni</h3>
@@ -264,7 +264,7 @@ include 'header.php';
             <div class="ultra-product-card">
                 <div class="product-badge" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">Pratik</div>
                 <div class="product-image-container">
-                    <img src="assets/images/product/patatespuresi web.webp" alt="Hemmen Patates Püresi" class="product-image" loading="lazy" decoding="async">
+                    <img src="/assets/images/product/patatespuresi web.webp" alt="Hemmen Patates Püresi" class="product-image" loading="lazy" decoding="async" width="443" height="600">
 					</div>
                 <div class="product-content">
                     <h3 class="product-title">Hemmen Patates Püresi</h3>
@@ -292,7 +292,7 @@ include 'header.php';
             <div class="ultra-product-card" style="background: linear-gradient(145deg, #fff7ed, #ffedd5); border: 2px solid var(--primary-orange);">
                 <div class="product-badge" style="background: linear-gradient(135deg, var(--primary-orange), var(--primary-red));">Toptan</div>
                 <div class="product-image-container">
-                    <img src="assets/images/product/toptansatis web.webp" alt="Hemmen Gıda Satış" class="product-image" loading="lazy" decoding="async">
+                    <img src="/assets/images/product/toptansatis web.webp" alt="Hemmen Gıda Satış" class="product-image" loading="lazy" decoding="async" width="800" height="800">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">Toptan Satış Avantajları</h3>
@@ -432,6 +432,58 @@ include 'header.php';
 						</div>
 			</div>
 		</section>
+
+
+<!-- SSS — AEO: soru formatında başlıklar + FAQPage şeması aynı kaynaktan üretilir -->
+<?php
+$anasayfa_sss = [
+    ['Hemmen Gıda hangi ürünleri toptan tedarik ediyor?',
+     'Et bulyon, tavuk bulyon, çiğ köfte harcı, sebzeli çeşni ve hazır patates püresi. Ürünler restoran, otel, kafe ve catering mutfaklarına yönelik endüstriyel ambalajda (örn. 5 kg) sunulur.'],
+    ['Minimum sipariş miktarı ve fiyat nasıl belirleniyor?',
+     'Toptan fiyat; sipariş miktarına ve teslimat bölgesine göre belirlenir. Güncel teklif için WhatsApp veya telefon (+90 539 586 06 35) üzerinden iletişime geçebilirsiniz.'],
+    ['Hangi şehirlere teslimat yapılıyor?',
+     'İstanbul merkezli olarak Türkiye geneline tedarik yapılır. İstanbul, Ankara, İzmir, Bursa, Antalya, Konya, Gaziantep ve Adana için ayrı hizmet bölgesi sayfalarımız bulunur.'],
+    ['Ürünler koruyucu veya domuz yağı içeriyor mu?',
+     'Hayır. Ürünlerimiz koruyucu içermez ve domuz yağı ile domuz kaynaklı katkı içermez. Tam içindekiler listesi her ürün sayfasında beyan edilmiştir.'],
+    ['Bulyon ne oranda kullanılır?',
+     'Et ve tavuk bulyonda standart oran 1 litre suya yaklaşık 20 gramdır. Bulyon soğuk suya katılır, kaynayana kadar karıştırılır ve kaynadıktan sonra 5-10 dakika kısık ateşte bekletilir.'],
+    ['Numune talep edilebilir mi?',
+     'Ürünü menünüze almadan önce değerlendirmek için iletişim kanallarımızdan talebinizi iletebilirsiniz. Değerlendirmeyi kendi tarifinizle yapmanızı öneririz.'],
+];
+?>
+<section class="ultra-section" style="background:#fff;">
+    <div class="ultra-container">
+        <div class="section-header">
+            <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+            <p class="section-subtitle">Toptan tedarik, ürün kullanımı ve teslimat hakkında</p>
+        </div>
+        <div class="faq-list">
+            <?php foreach ($anasayfa_sss as $i => [$soru, $cevap]): ?>
+            <details class="faq-item"<?php echo $i === 0 ? ' open' : ''; ?>>
+                <summary><?php echo htmlspecialchars($soru); ?></summary>
+                <p><?php echo htmlspecialchars($cevap); ?></p>
+            </details>
+            <?php endforeach; ?>
+        </div>
+        <p style="text-align:center;margin-top:2rem;">
+            <a href="/blog" class="btn-ultra btn-outline"><i class="fas fa-book-open"></i> Mutfak ve satın alma rehberlerimiz</a>
+        </p>
+    </div>
+</section>
+
+<script type="application/ld+json">
+<?php
+echo json_encode([
+    '@context' => 'https://schema.org',
+    '@type'    => 'FAQPage',
+    '@id'      => 'https://hemmengida.com/#faq',
+    'mainEntity' => array_map(static fn($q) => [
+        '@type' => 'Question', 'name' => $q[0],
+        'acceptedAnswer' => ['@type' => 'Answer', 'text' => $q[1]],
+    ], $anasayfa_sss),
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+?>
+</script>
 
 <!-- Smooth Scroll Script -->
 <script>

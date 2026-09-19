@@ -36,6 +36,18 @@ RewriteRule ^ /sebzeli-cesni [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+hemmen-gida-patates-puresi\.php[\s?] [NC]
 RewriteRule ^ /patates-puresi [R=301,L]
 
+RewriteCond %{THE_REQUEST} \s/+blog\.php[\s?] [NC]
+RewriteRule ^ /blog [R=301,L]
+
+# --- Sondaki slash'i kaldır (duplicate URL + kırık relative asset önlemi) ---
+# /et-bulyon/ gibi adresler tek kanonik forma (/et-bulyon) 301'lenir.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/+$
+RewriteRule ^(.+?)/+$ /$1 [R=301,L]
+
+# --- Özel 404 sayfası ---
+ErrorDocument 404 /404.php
+
 # Security Headers
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options nosniff
@@ -83,6 +95,10 @@ RewriteRule ^tavuk-bulyon/?$ hemmen-gida-tavuk-bulyon.php [L,QSA]
 RewriteRule ^cig-kofte-harci/?$ hemmen-gida-cigkofte-harci.php [L,QSA]
 RewriteRule ^sebzeli-cesni/?$ hemmen-gida-sebzeli-cesni.php [L,QSA]
 RewriteRule ^patates-puresi/?$ hemmen-gida-patates-puresi.php [L,QSA]
+
+# Blog
+RewriteRule ^blog/?$ blog.php [L,QSA]
+RewriteRule ^blog/([a-z0-9-]+)/?$ blog-yazi.php?yazi=$1 [L,QSA]
 
 # Şehir/bölge landing sayfaları — /istanbul-toptan-gida-tedarik gibi
 RewriteRule ^([a-z]+)-toptan-gida-tedarik/?$ bolge.php?sehir=$1 [L,QSA]

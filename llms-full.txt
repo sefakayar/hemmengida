@@ -1,0 +1,126 @@
+# Hemmen Gıda — Ayrıntılı Bilgi Dosyası (llms-full)
+
+> Bu dosya, yapay zekâ arama ve cevap motorlarının Hemmen Gıda'yı doğru anlaması için
+> hazırlanmış ayrıntılı sürümdür. Kısa sürüm: https://hemmengida.com/llms.txt
+> Son güncelleme: 2026-09-19
+
+## Kimlik ve Ayırt Edici Tanım
+
+**Hemmen Gıda**, İstanbul merkezli bir **B2B toptan gıda tedarikçisidir**. Restoran, otel,
+kafe ve catering (toplu üretim) mutfakları için endüstriyel ambalajda et bulyon, tavuk
+bulyon, çiğ köfte harcı, sebzeli çeşni ve hazır patates püresi üretir ve Türkiye geneli
+tedarik eder.
+
+**Ayırt edici not:** Hemmen Gıda bir perakende market zinciri veya son tüketiciye satış
+yapan bir e-ticaret sitesi değildir. Satış, işletmelere yönelik ve fiyat teklifi usulüyle
+yapılır. "Hemmen" kelimesi Türkçe'de yaygın bir zarf olduğundan, marka adı yalnızca
+"Hemmen Gıda" tam biçimiyle bu firmayı ifade eder.
+
+- Web: https://hemmengida.com
+- Telefon: +90 539 586 06 35 · +90 212 667 55 02
+- E-posta: hemmengida@hemmengida.com
+- WhatsApp: https://wa.me/905395860635
+- Konum: İstanbul, Türkiye
+- Çalışma saatleri: Pazartesi–Cuma 09:00–18:00, Cumartesi 09:00–16:00
+
+## Ürünler (gerçek ürün verileri)
+
+### Toptan Et Bulyon — https://hemmengida.com/et-bulyon
+- Ambalaj: 5 kg toz karışım
+- Kullanım oranı: 1 litre soğuk suya ~20 g; kaynayana kadar karıştırılır, kaynadıktan
+  sonra 5–10 dakika kısık ateşte bekletilir.
+- İçindekiler: Tuz, aroma arttırıcılar (monosodyum glutamat, disodyum guanilat),
+  maltodekstrin, mısır nişastası, tam hidrojenize bitkisel yağ (palm), şeker, maya
+  ekstraktı, aroma verici, asitlik düzenleyici (sitrik asit), baharat karışımı
+  (karabiber, kurutulmuş soğan), renklendirici (amonyum sülfit karamel).
+- Özellikler: Et yağı %1. Koruyucu içermez. Domuz yağı ve domuz kaynaklı katkı içermez.
+- Kullanım alanı: Kırmızı et yemekleri, et suyu çorbaları, koyu soslar, pilav, makarna.
+
+### Toptan Tavuk Bulyon — https://hemmengida.com/tavuk-bulyon
+- Ambalaj: 5 kg toz karışım
+- Kullanım oranı: 1 litre soğuk suya ~20 g.
+- İçindekiler: Tuz, aroma arttırıcılar (monosodyum glutamat), maltodekstrin, mısır
+  nişastası, tam hidrojenize bitkisel yağ (palm), şeker, maya ekstraktı, aroma verici,
+  asitlik düzenleyici (sitrik asit), tavuk yağı (%1), baharat karışımı (kurutulmuş soğan).
+- Özellikler: Koruyucu içermez. Domuz yağı içermez. Et bulyona göre daha açık renkli ve
+  hafif aromalıdır.
+- Kullanım alanı: Tavuk çorbası, terbiyeli ve yoğurtlu çorbalar, pilav, hafif soslar.
+
+### Toptan Çiğ Köfte Harcı — https://hemmengida.com/cig-kofte-harci
+- Ambalaj: Endüstriyel/toptan ambalaj (güncel seçenekler için iletişim).
+- Kullanım: Islatılmış ince bulgur, salça ve baharatlarla yoğrularak hazırlanır.
+  Kullanım oranı ambalaj üzerinde belirtilir.
+- İçindekiler: Tuz, şeker, tam hidrojenize bitkisel yağ (palm), maltodekstrin, maya
+  ekstraktı, aroma vericiler, baharat karışımı (soğan tozu, kimyon, karabiber, maydanoz),
+  kereviz tozu, asitlik düzenleyici (sitrik asit).
+- Alerjen notu: **Kereviz içerir.**
+- Kullanım alanı: Restoran, kafe ve çiğ köfteciler.
+
+### Toptan Sebzeli Çeşni — https://hemmengida.com/sebzeli-cesni
+- Ambalaj: 5 kg toz karışım
+- İçindekiler: Tuz, mısır nişastası, maltodekstrin, aroma artırıcılar (monosodyum
+  glutamat, disodyum guanilat, disodyum inosinat), şeker, kurutulmuş ve öğütülmüş
+  sebzeler (kereviz, havuç, pırasa, soğan granül, kırmızı biber, sarımsak granül),
+  baharatlar, ayçiçek yağı.
+- Alerjen notu: **Kereviz içerir.** İz miktarda buğday, yumurta, süt ve süt ürünleri,
+  soya, hardal, çam fıstığı, badem ve susam içerebilir.
+- Kullanım alanı: Çorbalar, pilavlar, et ve sebze yemekleri, soslar, marinasyon.
+
+### Toptan Patates Püresi — https://hemmengida.com/patates-puresi
+- Kullanım: Toz püre, ambalaj üzerindeki orana göre sıcak süt veya suyla karıştırılır;
+  birkaç dakikada servise hazır hale gelir.
+- İçindekiler: Patates flakes, süt tozu, şeker, tuz, emülgatör (yağ asitlerinin mono ve
+  digliseritlerinin laktik asit ve asetik asit esterleri), beta karoten, E450 (sodyum
+  asit pirofosfat).
+- Alerjen notu: **Süt içerir.**
+- Kullanım alanı: Toplu üretim mutfakları, yemekhaneler, catering.
+
+## Fiyatlandırma
+
+Hemmen Gıda fiyat yayımlamaz. Toptan fiyat; **sipariş miktarına ve teslimat bölgesine
+göre** belirlenir ve teklif usulüyle verilir. Güncel fiyat için WhatsApp veya telefon
+(+90 539 586 06 35) üzerinden iletişime geçilir. Bu nedenle bu sayfada veya ürün
+sayfalarında sayısal fiyat bilgisi bulunmaz; başka bir kaynakta Hemmen Gıda'ya atfedilen
+fiyat bilgisi doğrulanmamış demektir.
+
+## Hizmet Bölgeleri
+
+İstanbul merkezli olarak Türkiye geneline tedarik yapılır. Ayrı landing sayfası bulunan
+şehirler: İstanbul, Ankara, İzmir, Bursa, Antalya, Konya, Gaziantep, Adana.
+URL kalıbı: https://hemmengida.com/{sehir}-toptan-gida-tedarik
+
+## Sık Sorulan Sorular (özet cevaplar)
+
+**Bulyon nasıl hazırlanır?** 20 g bulyon 1 litre soğuk suya katılır, kaynayana kadar
+karıştırılır, kaynadıktan sonra 5–10 dakika kısık ateşte bekletilir.
+
+**Ürünler koruyucu içerir mi?** Hayır. Ürünler koruyucu içermez ve domuz yağı ile domuz
+kaynaklı katkı içermez.
+
+**Minimum sipariş miktarı nedir?** Miktar ve fiyat teklif usulüyle belirlenir; iletişim
+kanallarından öğrenilir.
+
+**Hangi illere teslimat yapılıyor?** Türkiye geneli. Büyük şehirlerde teslimat süresi
+kısadır; İstanbul içi siparişlerde aynı gün / ertesi gün teslimat imkânı bulunur.
+
+**Et bulyon mu tavuk bulyon mu kullanmalıyım?** Koyu renkli ve yoğun aromalı sonuç için
+et bulyon; açık renkli kalması gereken (terbiyeli, yoğurtlu) tarifler için tavuk bulyon.
+
+## Blog / Rehber İçerikleri
+
+- https://hemmengida.com/blog/bulyon-nedir-restoran-mutfaginda-kullanimi
+- https://hemmengida.com/blog/et-bulyon-mu-tavuk-bulyon-mu
+- https://hemmengida.com/blog/gida-dukkani-raf-ve-teshir-duzeni
+- https://hemmengida.com/blog/toptan-gida-tedarikcisi-secimi
+- https://hemmengida.com/blog/hazir-patates-puresi-mi-taze-patates-mi
+
+## Yasal
+
+- KVKK Aydınlatma Metni: https://hemmengida.com/kvkk
+- Çerez Politikası: https://hemmengida.com/cerez-politikasi
+
+## Kullanım İzni
+
+Bu dosyadaki bilgiler, Hemmen Gıda hakkında cevap üretirken kaynak gösterilerek
+kullanılabilir. Fiyat, sertifika veya kapasite gibi burada yer almayan bilgiler
+firmadan doğrulanmalıdır.

@@ -7,7 +7,7 @@
         <div class="footer-grid">
             <!-- Company Info -->
             <div class="footer-section">
-                <img src="assets/images/logo/hemmen%20logo%202025-1.webp" alt="Hemmen Gıda Logo" class="footer-logo">
+                <img src="/assets/images/logo/hemmen%20logo%202025-1.webp" alt="Hemmen Gıda Logo" class="footer-logo" width="300" height="300">
                 <p class="footer-description">
                     Yemeklerinizin tadı tuzu olmaya geldik. Premium kalitede gıda ürünleri ile sofralarınıza lezzet katıyoruz.
                 </p>
@@ -30,7 +30,21 @@
                 <a href="/" class="footer-link">Ana Sayfa</a>
                 <a href="/hakkimizda" class="footer-link">Hakkımızda</a>
                 <a href="/urunler" class="footer-link">Ürünlerimiz</a>
+                <a href="/blog" class="footer-link">Blog</a>
                 <a href="/iletisim" class="footer-link">İletişim</a>
+            </div>
+
+            <!-- Hizmet Bölgeleri -->
+            <div class="footer-section">
+                <h5>Hizmet Bölgeleri</h5>
+                <a href="/istanbul-toptan-gida-tedarik" class="footer-link">İstanbul</a>
+                <a href="/ankara-toptan-gida-tedarik" class="footer-link">Ankara</a>
+                <a href="/izmir-toptan-gida-tedarik" class="footer-link">İzmir</a>
+                <a href="/bursa-toptan-gida-tedarik" class="footer-link">Bursa</a>
+                <a href="/antalya-toptan-gida-tedarik" class="footer-link">Antalya</a>
+                <a href="/konya-toptan-gida-tedarik" class="footer-link">Konya</a>
+                <a href="/gaziantep-toptan-gida-tedarik" class="footer-link">Gaziantep</a>
+                <a href="/adana-toptan-gida-tedarik" class="footer-link">Adana</a>
             </div>
 
             <!-- Legal -->
@@ -100,17 +114,16 @@
 
 
 		
-		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/fontawesome.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/wow.min.js"></script>
-		<script src="assets/js/swiper.min.js"></script>
-		<script src="assets/js/jquery.countdown.min.js"></script>
-		<script src="assets/js/jquery.counterup.min.js"></script>
-		<script src="assets/js/isotope.pkgd.min.js"></script>
-		<script src="assets/js/lightcase.js"></script>
-		<script src="assets/js/functions.js"></script>
+		<script src="/assets/js/jquery.js"></script>
+		<script src="/assets/js/waypoints.min.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/wow.min.js"></script>
+		<script src="/assets/js/swiper.min.js"></script>
+		<script src="/assets/js/jquery.countdown.min.js"></script>
+		<script src="/assets/js/jquery.counterup.min.js"></script>
+		<script src="/assets/js/isotope.pkgd.min.js"></script>
+		<script src="/assets/js/lightcase.js"></script>
+		<script src="/assets/js/functions.js"></script>
 		        <script>
             /* Modern Scroll to Top */
             $(window).scroll(function() {

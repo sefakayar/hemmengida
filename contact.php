@@ -106,7 +106,7 @@ include 'header.php';
             <!-- Contact Form -->
             <div class="contact-form-container">
                 <h3 class="contact-title" style="text-align: center; font-size: 1.5rem; margin-bottom: var(--space-6);">İletişim Formu</h3>
-                <form action="phpmailer/contact.php" method="POST" id="contactForm" class="modern-contact-form">
+                <form action="/phpmailer/contact.php" method="POST" id="contactForm" class="modern-contact-form">
                     <!-- Honeypot: botlar doldurur, gerçek kullanıcı görmez -->
                     <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
                         <label for="website">Web sitesi (boş bırakın)</label>

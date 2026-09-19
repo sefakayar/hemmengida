@@ -38,11 +38,11 @@ $page_description = $c['meta'];
 
 // Ürün listesi (detay sayfalarına link)
 $urunler = [
-    ['Hemmen Çiğ Köfte Harcı', '/cig-kofte-harci', 'assets/images/product/Cig Kofte Web 1.webp', 'Doğal baharatlarla zenginleştirilmiş toptan çiğ köfte harcı.'],
-    ['Hemmen Et Bulyon',       '/et-bulyon',       'assets/images/product/Et Bulyon Web 1.webp', 'Dana eti özütlü, yoğun aromalı toptan et bulyon.'],
-    ['Hemmen Tavuk Bulyon',    '/tavuk-bulyon',    'assets/images/product/Tavuk Web 1.webp', 'Hafif ve besleyici, doğal aromalı toptan tavuk bulyon.'],
-    ['Hemmen Sebzeli Çeşni',   '/sebzeli-cesni',   'assets/images/product/Sebzeli Cesni Web 1.webp', 'Çorba ve yemekler için doğal sebzeli çeşni.'],
-    ['Hemmen Patates Püresi',  '/patates-puresi',  'assets/images/product/patatespuresi web.webp', 'Sütlü, pratik hazır patates püresi tozu.'],
+    ['Hemmen Çiğ Köfte Harcı', '/cig-kofte-harci', '/assets/images/product/Cig Kofte Web 1.webp', 'Doğal baharatlarla zenginleştirilmiş toptan çiğ köfte harcı.'],
+    ['Hemmen Et Bulyon',       '/et-bulyon',       '/assets/images/product/Et Bulyon Web 1.webp', 'Dana eti özütlü, yoğun aromalı toptan et bulyon.'],
+    ['Hemmen Tavuk Bulyon',    '/tavuk-bulyon',    '/assets/images/product/Tavuk Web 1.webp', 'Hafif ve besleyici, doğal aromalı toptan tavuk bulyon.'],
+    ['Hemmen Sebzeli Çeşni',   '/sebzeli-cesni',   '/assets/images/product/Sebzeli Cesni Web 1.webp', 'Çorba ve yemekler için doğal sebzeli çeşni.'],
+    ['Hemmen Patates Püresi',  '/patates-puresi',  '/assets/images/product/patatespuresi web.webp', 'Sütlü, pratik hazır patates püresi tozu.'],
 ];
 
 // Şehre özgü SSS
@@ -83,7 +83,7 @@ include __DIR__ . '/header.php';
             <?php foreach ($urunler as [$adi, $link, $img, $aciklama]): ?>
             <div class="ultra-product-card">
                 <div class="product-image-container">
-                    <img src="<?php echo htmlspecialchars($img); ?>" alt="<?php echo htmlspecialchars($adi . ' - ' . $ad); ?>" class="product-image" loading="lazy" decoding="async">
+                    <img src="<?php echo htmlspecialchars($img); ?>" alt="<?php echo htmlspecialchars($adi . ' - ' . $ad); ?>" class="product-image" width="443" height="600" loading="lazy" decoding="async">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title"><?php echo htmlspecialchars($adi); ?></h3>

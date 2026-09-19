@@ -7,13 +7,16 @@
  *   $page_image       -> og:image (opsiyonel, tam URL)
  * Tanımlanmazsa aşağıdaki varsayılanlar kullanılır.
  */
-$site_name   = 'Hemmen Gıda';
-$site_url    = 'https://hemmengida.com';
+require_once __DIR__ . '/seo-config.php';
+
+$site_name   = SEO_SITE_NAME;
+$site_url    = SEO_SITE_URL;
 $default_img = $site_url . '/assets/images/logo/hemmen%20logo%202025-1.webp';
 
 $page_title       = isset($page_title) ? $page_title : 'Hemmen Gıda | Toptan Bulyon, Çiğ Köfte Harcı ve Çeşni Tedarikçisi';
 $page_description = isset($page_description) ? $page_description : 'Restoran, otel ve toplu üretim mutfakları için toptan et bulyon, tavuk bulyon, çiğ köfte harcı, sebzeli çeşni ve patates püresi. Türkiye geneli hızlı tedarik.';
 $page_image      = isset($page_image) ? $page_image : $default_img;
+$page_og_type    = isset($page_og_type) ? $page_og_type : 'website';
 
 // Kanonik URL — mevcut isteğin yolundan üretilir
 $canonical = $site_url . strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
@@ -28,7 +31,7 @@ $canonical = $site_url . strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
 		<link rel="canonical" href="<?php echo htmlspecialchars($canonical); ?>" />
 
 		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content="<?php echo htmlspecialchars($page_og_type); ?>" />
 		<meta property="og:site_name" content="<?php echo htmlspecialchars($site_name); ?>" />
 		<meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>" />
 		<meta property="og:description" content="<?php echo htmlspecialchars($page_description); ?>" />
@@ -50,6 +53,10 @@ $canonical = $site_url . strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="msapplication-tap-highlight" content="no" />
 		
+		<?php if (SEO_GSC_VERIFICATION !== ''): ?>
+		<meta name="google-site-verification" content="<?php echo htmlspecialchars(SEO_GSC_VERIFICATION); ?>" />
+		<?php endif; ?>
+
 		<!-- SEO Meta Tags -->
 		<meta name="robots" content="index, follow" />
 		<meta name="author" content="Hemmen Gıda" />
@@ -60,73 +67,108 @@ $canonical = $site_url . strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
 		
 		
 		
-		<!-- LocalBusiness Schema Markup for SEO -->
+		<!-- Entity grafiği: Organization/LocalBusiness + WebSite + WebPage -->
 		<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "LocalBusiness",
-		  "name": "Hemmen Gıda",
-		  "description": "Türkiye'nin güvenilir toptan gıda tedarikçisi. Tavuk bulyon, et bulyon, çiğ köfte harcı, patates püresi ve sebze çeşnileri toptan satışı.",
-		  "url": "https://hemmengida.com",
-		  "logo": "https://hemmengida.com/assets/images/logo/hemmen%20logo%202025-1.webp",
-		  "image": "https://hemmengida.com/assets/images/logo/hemmen%20logo%202025-1.webp",
-		  "telephone": "+90-539-586-06-35",
-		  "email": "hemmengida@hemmengida.com",
-		  "address": {
-		    "@type": "PostalAddress",
-		    "addressCountry": "TR",
-		    "addressLocality": "İstanbul",
-		    "addressRegion": "İstanbul"
-		  },
-		  "geo": {
-		    "@type": "GeoCoordinates",
-		    "latitude": "41.0082",
-		    "longitude": "28.9784"
-		  },
-		  "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-16:00",
-		  "priceRange": "$$",
-		  "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-		  "currenciesAccepted": "TRY",
-		  "areaServed": {
-		    "@type": "Country",
-		    "name": "Turkey"
-		  },
-		  "serviceArea": {
-		    "@type": "GeoCircle",
-		    "geoMidpoint": {
-		      "@type": "GeoCoordinates",
-		      "latitude": "39.9334",
-		      "longitude": "32.8597"
-		    },
-		    "geoRadius": "1000000"
-		  },
-		  "sameAs": [
-		    "https://wa.me/905395860635",
-		    "https://share.google/PYoIGlRM6QHIFqhsl"
-		  ]
-		}
+		<?php
+		echo json_encode([
+		  '@context' => 'https://schema.org',
+		  '@graph' => [
+		    [
+		      '@type' => ['Organization', 'LocalBusiness'],
+		      '@id'   => SEO_SITE_URL . '/#organization',
+		      'name'  => SEO_SITE_NAME,
+		      'alternateName' => 'Hemmen',
+		      'url'   => SEO_SITE_URL . '/',
+		      'description' => SEO_OFFICIAL_DESCRIPTION,
+		      'disambiguatingDescription' => SEO_DISAMBIGUATION,
+		      'logo' => ['@type' => 'ImageObject', '@id' => SEO_SITE_URL . '/#logo', 'url' => SEO_LOGO, 'caption' => SEO_SITE_NAME],
+		      'image' => ['@id' => SEO_SITE_URL . '/#logo'],
+		      'telephone' => [SEO_PHONE, SEO_PHONE_ALT],
+		      'email' => SEO_EMAIL,
+		      'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'İstanbul', 'addressRegion' => 'İstanbul', 'addressCountry' => 'TR'],
+		      'geo' => ['@type' => 'GeoCoordinates', 'latitude' => '41.0082', 'longitude' => '28.9784'],
+		      'openingHoursSpecification' => [
+		        ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Monday','Tuesday','Wednesday','Thursday','Friday'], 'opens' => '09:00', 'closes' => '18:00'],
+		        ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Saturday'], 'opens' => '09:00', 'closes' => '16:00'],
+		      ],
+		      'priceRange' => '$$',
+		      'paymentAccepted' => 'Nakit, Kredi Kartı, Havale/EFT',
+		      'currenciesAccepted' => 'TRY',
+		      'areaServed' => ['@type' => 'Country', 'name' => 'Türkiye'],
+		      'knowsAbout' => ['Toptan bulyon', 'Et bulyon', 'Tavuk bulyon', 'Çiğ köfte harcı', 'Sebzeli çeşni', 'Hazır patates püresi', 'Toplu üretim mutfağı tedariki'],
+		      'makesOffer' => array_map(static fn($u) => [
+		        '@type' => 'Offer',
+		        'itemOffered' => ['@type' => 'Product', 'name' => $u[0], 'url' => SEO_SITE_URL . $u[1]],
+		        'availability' => 'https://schema.org/InStock',
+		        'priceCurrency' => 'TRY',
+		        'businessFunction' => 'https://purl.org/goodrelations/v1#Sell',
+		        'eligibleCustomerType' => 'https://schema.org/Business',
+		      ], [
+		        ['Toptan Et Bulyon', '/et-bulyon'],
+		        ['Toptan Tavuk Bulyon', '/tavuk-bulyon'],
+		        ['Toptan Çiğ Köfte Harcı', '/cig-kofte-harci'],
+		        ['Toptan Sebzeli Çeşni', '/sebzeli-cesni'],
+		        ['Toptan Patates Püresi', '/patates-puresi'],
+		      ]),
+		      'sameAs' => SEO_SAME_AS,
+		    ],
+		    [
+		      '@type' => 'WebSite',
+		      '@id'   => SEO_SITE_URL . '/#website',
+		      'url'   => SEO_SITE_URL . '/',
+		      'name'  => SEO_SITE_NAME,
+		      'description' => SEO_OFFICIAL_DESCRIPTION,
+		      'inLanguage' => 'tr-TR',
+		      'publisher' => ['@id' => SEO_SITE_URL . '/#organization'],
+		    ],
+		    [
+		      '@type' => 'WebPage',
+		      '@id'   => $canonical,
+		      'url'   => $canonical,
+		      'name'  => $page_title,
+		      'description' => $page_description,
+		      'inLanguage' => 'tr-TR',
+		      'isPartOf' => ['@id' => SEO_SITE_URL . '/#website'],
+		      'about'    => ['@id' => SEO_SITE_URL . '/#organization'],
+		      'primaryImageOfPage' => ['@type' => 'ImageObject', 'url' => $page_image],
+		    ],
+		  ],
+		], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+		?>
 		</script>		
 		
+		<?php if (SEO_GA4_ID !== ''): ?>
+		<!-- Google Analytics 4 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo rawurlencode(SEO_GA4_ID); ?>"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', '<?php echo htmlspecialchars(SEO_GA4_ID, ENT_QUOTES); ?>');
+		</script>
+		<?php endif; ?>
+
 		<!-- Modern Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 		
 		<!-- Icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
 		
-		    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+		    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/logo/favicon.ico">
 		
 		<!-- Styles -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/animate.css">
-		<link rel="stylesheet" href="assets/css/swiper.min.css">
-		<link rel="stylesheet" href="assets/css/modern-hemmen.css">
-		<link rel="stylesheet" href="mobile-banner-fix.css">
-		<link rel="stylesheet" href="assets/css/fresh-2025.css?v=2">
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/css/animate.css">
+		<link rel="stylesheet" href="/assets/css/swiper.min.css">
+		<link rel="stylesheet" href="/assets/css/modern-hemmen.css">
+		<link rel="stylesheet" href="/mobile-banner-fix.css">
+		<link rel="stylesheet" href="/assets/css/fresh-2025.css?v=3">
 <?php if (basename($_SERVER['PHP_SELF'] ?? '') === 'index.php'): ?>
 		<!-- LCP hızlandırma: ana sayfa ilk banner'ı öncelikli yükle -->
-		<link rel="preload" as="image" href="assets/images/banner/1.webp" fetchpriority="high">
+		<link rel="preload" as="image" href="/assets/images/banner/1.webp" fetchpriority="high">
 <?php endif; ?>
 
 		
@@ -857,7 +899,7 @@ $canonical = $site_url . strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
 				<div class="header-content">
 					<div class="logo">
 						<a href="/">
-							<img src="assets/images/logo/hemmen%20logo%202025-1.webp" alt="Hemmen Gıda Logo" class="ultra-logo">
+							<img src="/assets/images/logo/hemmen%20logo%202025-1.webp" alt="Hemmen Gıda Logo" class="ultra-logo" width="300" height="300">
 						</a>
 					</div>
 					

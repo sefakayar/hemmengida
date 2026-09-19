@@ -14,12 +14,10 @@ include 'header.php';
   "image": "https://hemmengida.com/assets/images/product/Cig%20Kofte%20Web%201.webp",
   "description": "4 bin yıl önce ortaya çıkan ve günümüze kadar gelen, sofralarımızın vazgeçilmez tadı olan çiğköfteye yenilikler ve lezzetler katmak için üretilmiştir.",
   "brand": {
-    "@type": "Brand",
-    "name": "Hemmen Gıda"
+    "@id": "https://hemmengida.com/#organization"
   },
   "manufacturer": {
-    "@type": "Organization",
-    "name": "Hemmen Gıda"
+    "@id": "https://hemmengida.com/#organization"
   },
   "category": "Gıda Ürünleri",
   "weight": "10 kg",
@@ -39,7 +37,29 @@ include 'header.php';
       "name": "Domuz Yağı",
       "value": "İçermez"
     }
-  ]
+  ],
+  "@id": "https://hemmengida.com/cig-kofte-harci#product",
+  "url": "https://hemmengida.com/cig-kofte-harci",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://hemmengida.com/cig-kofte-harci",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "TRY",
+    "businessFunction": "https://purl.org/goodrelations/v1#Sell",
+    "eligibleCustomerType": "https://schema.org/Business",
+    "seller": {
+      "@id": "https://hemmengida.com/#organization"
+    },
+    "availableDeliveryMethod": "https://schema.org/ParcelService",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Türkiye"
+    }
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "name": "Restoran, otel, kafe ve catering / toplu üretim mutfakları"
+  }
 }
 </script>
 
@@ -48,7 +68,7 @@ include 'header.php';
     <div class="ultra-container">
         <div class="product-detail-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
             <div class="product-image-large">
-                <img src="assets/images/product/Cig Kofte Web 1.webp" alt="Hemmen Çiğ Köfte Harcı" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <img src="/assets/images/product/Cig Kofte Web 1.webp" alt="Hemmen Çiğ Köfte Harcı" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);" width="443" height="600">
             </div>
             
             <div class="product-info">

@@ -28,6 +28,13 @@
 - [Gaziantep Toptan Gıda Tedariki](https://hemmengida.com/gaziantep-toptan-gida-tedarik)
 - [Adana Toptan Gıda Tedariki](https://hemmengida.com/adana-toptan-gida-tedarik)
 
+## Blog — Rehber İçerikleri
+- [Bulyon Nedir, Restoran Mutfağında Nasıl Kullanılır?](https://hemmengida.com/blog/bulyon-nedir-restoran-mutfaginda-kullanimi): Bulyonun tanımı, 1 litre suya ~20 g kullanım oranı, mutfakta kullanım alanları, saklama ve alerjen notu.
+- [Et Bulyon mu Tavuk Bulyon mu?](https://hemmengida.com/blog/et-bulyon-mu-tavuk-bulyon-mu): İki ürünün renk, aroma, yağ bileşeni ve kullanım alanı karşılaştırması; hangi yemekte hangisi.
+- [Gıda Dükkânı Açarken Raf ve Teşhir Düzeni](https://hemmengida.com/blog/gida-dukkani-raf-ve-teshir-duzeni): Müşteri akışı, dökme/ambalajlı ürün ayrımı, etiketleme, stok odası ve açılış kontrol listesi.
+- [Toptan Gıda Tedarikçisi Seçerken Nelere Dikkat Edilmeli?](https://hemmengida.com/blog/toptan-gida-tedarikcisi-secimi): 8 maddelik değerlendirme listesi ve porsiyon başı maliyet hesaplama yöntemi.
+- [Hazır Patates Püresi mi, Taze Patates mi?](https://hemmengida.com/blog/hazir-patates-puresi-mi-taze-patates-mi): İşçilik, fire, kıvam tutarlılığı ve stok karşılaştırması; maliyet hesaplama formülü.
+
 ## Hizmet Kapsamı
 - Müşteri tipi: Restoran, otel, kafe, catering / toplu yemek üreticileri (B2B)
 - Bölge: İstanbul merkezli, Türkiye geneli tedarik (İstanbul, Ankara, İzmir, Bursa, Antalya, Konya, Gaziantep, Samsun, Kayseri ve tüm iller)
@@ -37,3 +44,8 @@
 ## Yasal
 - [KVKK Aydınlatma Metni](https://hemmengida.com/kvkk)
 - [Çerez Politikası](https://hemmengida.com/cerez-politikasi)
+
+## Not
+- Fiyatlar yayımlanmaz; toptan fiyat miktara ve teslimat bölgesine göre teklif usulü belirlenir.
+- Daha ayrıntılı sürüm: https://hemmengida.com/llms-full.txt
+- Son güncelleme: 2026-09-19

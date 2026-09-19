@@ -14,12 +14,10 @@ include 'header.php';
   "image": "https://hemmengida.com/assets/images/product/Tavuk%20Web%201.webp",
   "description": "Enfes tavuk tadı ve kokusu ile tavuk yemekleri, pilav, makarna ve çorbalarınıza tat vermek, yüksek kaliteli ve lezzetli ürünler ortaya çıkarmak için üretilmiştir.",
   "brand": {
-    "@type": "Brand",
-    "name": "Hemmen Gıda"
+    "@id": "https://hemmengida.com/#organization"
   },
   "manufacturer": {
-    "@type": "Organization",
-    "name": "Hemmen Gıda"
+    "@id": "https://hemmengida.com/#organization"
   },
   "category": "Gıda Ürünleri - Bulyon",
   "weight": "5 kg",
@@ -39,7 +37,29 @@ include 'header.php';
       "name": "Domuz Yağı",
       "value": "İçermez"
     }
-  ]
+  ],
+  "@id": "https://hemmengida.com/tavuk-bulyon#product",
+  "url": "https://hemmengida.com/tavuk-bulyon",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://hemmengida.com/tavuk-bulyon",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "TRY",
+    "businessFunction": "https://purl.org/goodrelations/v1#Sell",
+    "eligibleCustomerType": "https://schema.org/Business",
+    "seller": {
+      "@id": "https://hemmengida.com/#organization"
+    },
+    "availableDeliveryMethod": "https://schema.org/ParcelService",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Türkiye"
+    }
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "name": "Restoran, otel, kafe ve catering / toplu üretim mutfakları"
+  }
 }
 </script>
 
@@ -48,7 +68,7 @@ include 'header.php';
     <div class="ultra-container">
         <div class="product-detail-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
             <div class="product-image-large">
-                <img src="assets/images/product/Tavuk Web 1.webp" alt="Hemmen Tavuk Bulyon" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <img src="/assets/images/product/Tavuk Web 1.webp" alt="Hemmen Tavuk Bulyon" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);" width="443" height="600">
             </div>
             
             <div class="product-info">
