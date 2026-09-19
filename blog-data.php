@@ -196,7 +196,7 @@ HTML,
 
 <h2>Raf tarafında ölçüye özel mi, hazır mı?</h2>
 <p>Hazır raf ucuzdur ama dükkânın duvar boyu, kolon çıkıntısı ve tavan yüksekliği nadiren standarda uyar; arada kaybedilen 20–30 cm'ler toplandığında ciddi teşhir alanı gider. Ölçüye özel üretimde bu kayıp olmaz, karşılığında teslim süresi uzar.</p>
-<p>Aktar ve doğal ürünler mağazasına özgü düzeni — baharat ve kavanoz teşhiri, dökme ürün bölümü, etiketlik ve kantar alanı — ayrıntılı anlatan bir kaynak olarak <a href="https://kareraf.com/tr/sektorler/dogal-urunler">aktar ve doğal ürünler raf sistemleri</a> sayfasına bakabilirsiniz.</p>
+<p>Aktar ve doğal ürünler mağazasına özgü düzeni — baharat ve kavanoz teşhiri, dökme ürün bölümü, etiketlik ve kantar alanı — ayrıntılı anlatan bir kaynak olarak <a href="https://kareraf.com/tr/sektorler/dogal-urunler" referrerpolicy="no-referrer-when-downgrade">aktar ve doğal ürünler raf sistemleri</a> sayfasına bakabilirsiniz.</p>
 
 <h2>Açılış öncesi kısa kontrol listesi</h2>
 <ul class="kontrol-listesi">
