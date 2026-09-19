@@ -1,0 +1,7 @@
+services:
+  hemmengida:
+    build: .
+    container_name: hemmengida
+    restart: unless-stopped
+    ports:
+      - "3004:80"

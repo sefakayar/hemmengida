@@ -108,6 +108,9 @@ RewriteRule ^([a-z]+)-toptan-gida-tedarik/?$ bolge.php?sehir=$1 [L,QSA]
 # 500 hatası verirdi. PHP sürümü sunucu/VirtualHost tarafında ayarlanır (PHP 8.1+ önerilir).
 
 # --- Hassas dosyaları HTTP erişimine kapat ---
-<FilesMatch "(^\.ht|\.(md|log|bak|sql|example|json)$)">
+# Build/deploy ve yapılandırma dosyaları HTTP ile okunamaz.
+# NOT: Dockerfile ve docker-compose.yml web kökünde durduğu için burada da
+# kapatılıyor (.dockerignore ile imaja hiç girmemeleri asıl çözüm).
+<FilesMatch "(^\.ht|^\.env|^\.dockerignore|^Dockerfile|^docker-compose|\.(md|log|bak|sql|example|json|ya?ml|lock|dist|sh|ini)$)">
     Require all denied
 </FilesMatch>
